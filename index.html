@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Simple Survey Form</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="only screen" href="/css/responsiveness.css">
+
+    
+</head>
+
+
+<body>
+    <div class="top">
+        <div class="effect"><h1 id="title">A Survey Form   </h1></div>
+        <p id="main_para">This survey form is made using CSS and HTML only. Some ideas were taken from fcc.</p>
+    </div>
+
+
+
+    <div class="form_container">
+
+
+    <form action="#" id="form">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required placeholder="Enter your name">
+
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" required placeholder="Enter your Email">
+
+        <label for="age">Age (optional)</label>
+        <input type="text" name="age" id="age" placeholder="Enter your age">
+
+        <label for="role">Which option best describes your current role?</label>
+        <select name="role" id="role" required>
+            <option value=""  class="role_options">Select</option>
+            <option value="" class="role_options">Student/Learner</option>
+            <option value="" class="role_options">Front-end Developer</option>
+            <option value="" class="role_options">Back-end Developer</option>
+            <option value="" class="role_options">Full-stack Developer</option>
+            <option value="" class="role_options">Game Developer</option>
+            <option value="" class="role_options">Data Scientist</option>
+            <option value="" class="role_options">Blockchain Developer</option>
+            <option value="" class="role_options">Software Developer</option>
+            <option value="" class="role_options">Tester</option>
+            <option value="" class="role_options">Other</option>
+        </select>
+
+
+
+        <p>Do you think AI poses a threat to humanity?</p>
+        <div><input type="radio" name="humanity" id="yes" required >
+        <label for="yes" class="options">Yes, it does.</label></div>
+        <div><input type="radio" name="humanity" id="no" required >
+        <label for="no" class="options">No, it does not.</label></div>
+        <div><input type="radio" name="humanity" id="uh" required>
+        <label for="uh" class="options">I'm not really sure about that.</label></div>
+        <p>Do you think AI poses a threat to the EMPLOYEMENT in the CS sector? </p>
+        <div><input type="radio" name="cs_sector" id="yes2" required>
+        <label for="yes2" class="options">Yes, it does.</label></div>
+        <div><input type="radio" name="cs_sector" id="no2" required>
+        <label for="no2" class="options">No, it does not.</label></div>
+        <div><input type="radio" name="cs_sector" id="uh2" required>
+        <label for="uh2" class="options">I'm not really sure about that.</label></div>
+
+
+        <label for="more">Tell us more! <span style="font-size: 1.2rem; font-weight: normal;">(Optional)</span></label>
+        <textarea name="" id="more" cols="30" rows="10" placeholder="Type..."></textarea>
+
+
+        <p>How can i improve this website?   <span style="font-size: 1.2rem; font-weight: normal;">(Click all that apply) [Optional]</span> </p>
+        
+        <div ><input type="checkbox" name="" id="background" class="tick">
+        <label for="background" class="options" >Use a better background <span class="checkbox"></span></label>
+        </div>
+
+        
+        <div><input type="checkbox" name="" id="fonts" class="tick">
+        <label for="fonts" class="options">Try using better fonts <span class="checkbox"></span></label></div>
+
+        <div><input type="checkbox" name="" id="colors" class="tick">
+        <label for="colors" class="options">The color scheme looks terrible. Fix that.<span class="checkbox"></span> </label></div>
+
+
+        <div><input type="checkbox" name=""  class="tick" id="animations">
+        <label for="animations" class="options">Use more/better CSS animations <span class="checkbox"></span></label></div>
+
+        <div><input type="checkbox" name="" id="cleaner" class="tick">
+        <label for="cleaner" class="options">Make the website a bit more cleaner <span class="checkbox"></span></label></div>
+
+        <div><input type="checkbox" name="" id="sound" class="tick">
+        <label for="sound" class="options">Add sound effects<span class="checkbox"></span> </label></div>
+        
+        <label for="other">Add more: </label>
+        <textarea name="" id="other" cols="30" rows="10" placeholder="Type..."></textarea>
+        
+    
+            
+        <input type="submit" value="Submit"  id="submit">
+        
+
+
+    
+
+
+
+    </form>
+    </div>
+</body>
+
+</html>
