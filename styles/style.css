@@ -1,0 +1,192 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: rgb(255, 255, 255); */
+    
+    background: url("/images/background.jpg") no-repeat;
+    height: 100vh;
+    line-height: 1.4;
+
+    
+}
+
+
+::selection {
+    color: rgb(0, 0, 0);
+    background: #86a2a9;
+  } 
+
+
+/* Top heading and para */
+
+.top::before{
+        content: "";
+        background-color: rgb(255, 255, 255);
+    
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 235vh;
+        z-index: -1;
+    
+}
+.top {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 20vh;
+    flex-direction: column;
+}
+
+.top h1{
+    font-family: 'Onest', sans-serif;
+    font-family: 'Onest', sans-serif;
+    overflow: hidden;
+    border-right: 4px solid rgb(93, 159, 187);
+    white-space: nowrap;
+    font-size: 2rem;
+    width: 0;
+    animation: typing 5s steps(15, end) forwards, blink .8s infinite;
+}
+.top .effect{
+    display: inline-block;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+    
+  }
+@keyframes blink {
+    from { border-color: transparent }
+    to { border-color: rgb(39, 86, 228); }
+  }
+  
+  
+
+.top p{
+    font-family: 'Onest', sans-serif;
+    font-weight: lighter;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* main form */
+.form_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+
+
+
+
+form{
+
+    display: flex;
+    flex-flow: column wrap;
+    width: 49vw;
+    
+
+    
+    
+}
+
+form label, p, #submit {
+
+    font-family: 'Onest', sans-serif;
+    margin: 7px 10px;
+    margin-top: 27px;
+    font-size: 1.4rem;
+
+}
+
+form input::placeholder, textarea::placeholder{
+    font-size: 1.28rem;
+    font-family: 'Onest', sans-serif;
+    font-weight: lighter;
+    
+    
+}
+form input, select, textarea{
+    padding:10px;
+    margin: 0 10px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    line-height: inherit;
+    font-size: 1.28rem;
+    background-color: #e0ecec;
+    transition: all 0.2s ease-in 0ms;
+}
+.role_options{
+    background-color: azure;
+}
+
+form input:focus, select:focus, textarea:focus{
+    background-color:#fefefe;
+}
+form input:hover, select:hover, textarea:hover{
+    background-color: azure;
+}
+
+form textarea{
+    resize: vertical;
+    min-height: 200px;
+    max-height: 500px;
+    font-size: 1.28rem;
+    
+}
+form select{
+    font-size: 1.28rem;
+    font-family: 'Onest', sans-serif;
+    font-weight: lighter;
+}
+
+.options{
+    margin-left: -5px;
+
+}
+
+form #submit{
+    margin:20px 7px;
+    background-color: rgb(146, 210, 208);
+   
+} 
+
+
+form input[type="checkbox"]{
+    accent-color: rgb(146, 210, 208);
+    height: 20px;
+    width: 20px;
+}
+form input[type="radio"]{
+    accent-color: rgb(146, 210, 208);
+    height: 20px;
+    width: 20px;
+}
+form input[type="checkbox"]:hover, input[type="radio"]:hover{
+    accent-color: #f0ecd4;
+    height: 21px;
+    width: 21px;    
+    
+}
+#submit{
+    transition: all 0.2s ease-in 0ms;
+}
+#submit:hover{
+
+    background-color: #87bacd;
+    border: 2px solid rgb(146, 210, 208)
+}
+
+
+  

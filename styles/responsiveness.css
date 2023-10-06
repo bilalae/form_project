@@ -1,0 +1,34 @@
+@media only screen and (max-width: 1059px){
+    form{
+        width: 60vw;
+    }
+    
+}
+
+
+@media only screen and (max-width: 909px){
+    form{
+        width: 80vw;
+    }
+    
+    .top {
+        text-align: center;
+    }
+    .top p{
+        margin: 10px 20px;
+    }
+}
+
+@media only screen and (max-width:446px){
+    form{
+        width:auto;
+    }
+    .tick{
+        
+        margin: 6px 5px;
+        
+        
+    }
+    
+
+}
