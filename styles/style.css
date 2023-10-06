@@ -4,13 +4,9 @@
     box-sizing: border-box;
 }
 body{
-    /* background-color: rgb(255, 255, 255); */
+    background-color: rgb(255, 255, 255);
     
-    background: url("/images/background.jpg") no-repeat;
-    height: 100vh;
-    line-height: 1.4;
-
-    
+  
 }
 
 
@@ -24,15 +20,19 @@ body{
 
 .top::before{
         content: "";
-        background-color: rgb(255, 255, 255);
-    
+        background-image: url("/styles/images/background.jpg");
+       
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+
         opacity: 0.5;
         position: absolute;
         top: 0;
         left: 0;
         bottom: 0;
         right: 0;
-        height: 235vh;
+        height: 300vh;
         z-index: -1;
     
 }

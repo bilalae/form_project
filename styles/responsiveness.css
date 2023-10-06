@@ -22,6 +22,12 @@
 @media only screen and (max-width:446px){
     form{
         width:auto;
+        height: auto;
+        
+    }
+    
+    form * {
+        margin:9px 5px;
     }
     .tick{
         
